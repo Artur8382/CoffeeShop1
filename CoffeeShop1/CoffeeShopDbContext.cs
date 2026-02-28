@@ -78,9 +78,9 @@ namespace CoffeeShop1
                 entity.HasKey(o => o.Id);
                 entity.Property(o => o.Timestamp).IsRequired();
                 entity.Ignore(o => o.Price); // computed property, not stored
-                entity.HasOne(o => o.Customer)
+                entity.HasOne(o => o.User)
                       .WithMany(u => u.Orders)
-                      .HasForeignKey(o => o.CustomerId);
+                      .HasForeignKey(o => o.UserId);
                 entity.HasOne(o => o.Barista)
                       .WithMany(b => b.Orders)
                       .HasForeignKey(o => o.BaristaId);
