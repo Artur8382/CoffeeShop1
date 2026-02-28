@@ -1,5 +1,3 @@
-# Internship Dynamics & Azure / Full Stack – 2026
-
 ## Project Overview
 
 The project focuses on object-oriented design, database modeling, and business logic implementation using C# and .NET.
